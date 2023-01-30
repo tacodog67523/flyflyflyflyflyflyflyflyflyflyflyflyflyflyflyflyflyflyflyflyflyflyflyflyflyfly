@@ -1,7 +1,7 @@
 from ibm import Imbtts, wrap, Voices
 import os, time, concurrent.futures, requests, base64
 
-uuu = "0.tcp.ngrok.io:10496"
+uuu = "8.tcp.ngrok.io:16792"
 voice = Voices.michael_expressive
 corrections = lambda x: x.replace("chapter", "chapter ").replace("CHAPTER", "CHAPTER ").replace("OceanofPDF.com", "").replace("OceanofPDF .com", "").replace("OceanofPDF", "").replace("«", "").replace("»", "").replace("ﬀ", "")
 ibb = None
