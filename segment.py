@@ -8,8 +8,6 @@ ibb = None
 def get():
 
 	ibb = Imbtts()
-	
-	
 
 	while True:
 		t = time.time()
