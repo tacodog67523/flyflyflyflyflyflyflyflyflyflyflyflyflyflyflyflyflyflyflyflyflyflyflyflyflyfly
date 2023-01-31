@@ -1,13 +1,14 @@
 from ibm import Imbtts, wrap, Voices
 import os, time, concurrent.futures, requests, base64
 
-uuu = "4.tcp.ngrok.io:19850"
+uuu = "4.tcp.ngrok.io:11372"
 voice = Voices.michael_expressive
 corrections = lambda x: x.replace("chapter", "chapter ").replace("CHAPTER", "CHAPTER ").replace("OceanofPDF.com", "").replace("OceanofPDF .com", "").replace("OceanofPDF", "").replace("«", "").replace("»", "").replace("ﬀ", "").replace("www.freeclassicebooks.com", "")
 ibb = None
 def get():
 
 	ibb = Imbtts()
+	
 	
 
 	while True:
