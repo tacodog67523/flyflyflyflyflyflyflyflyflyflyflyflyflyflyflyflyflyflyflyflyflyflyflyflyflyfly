@@ -1,7 +1,7 @@
 from ibm import Imbtts, wrap, Voices
 import os, time, concurrent.futures, requests, base64, random
 
-uuu = "2.tcp.eu.ngrok.io:18043"
+uuu = "4.tcp.ngrok.io:11267"
 voice = Voices.michael_expressive
 corrections = lambda x: x.replace("chapter", "chapter ").replace("CHAPTER", "CHAPTER ").replace("OceanofPDF.com", "").replace("OceanofPDF .com", "").replace("OceanofPDF", "").replace("«", "").replace("»", "").replace("ﬀ", "").replace("www.freeclassicebooks.com", "").replace("wikileak", "wiki leak").replace("cypherpunk", 'cypher punk').replace("cryptome", "crypto me").replace("blacknet", "black net").replace("mixnetwork", "mix network").replace("electroniccommunications", "electronic communications").replace("theonetime", "the one time").replace("siprnet", "sipr net")
 ibb = None
