@@ -6,7 +6,6 @@ s_chunck = lambda r: "".join([random.choice(s_pattern) for _ in range(r)])
 def createId():
 	return f"{s_chunck(8)}-{s_chunck(4)}-{s_chunck(4)}-{s_chunck(4)}-{s_chunck(12)}"
 
-
 def wrap(x):
 	return f'<prosody pitch="0%" rate="-0%">{x}</prosody>'
 
